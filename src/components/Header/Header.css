@@ -23,3 +23,9 @@
 .change-theme-button:hover {
    background-color: var(--bg-color-theme-hover);
 }
+
+@media (min-width: 1024px) {
+   .header {
+      max-width: 1240px;
+   }
+}

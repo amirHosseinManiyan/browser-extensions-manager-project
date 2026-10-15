@@ -86,8 +86,7 @@ export default function Main() {
                      onRemove={handleExtensionRemove}
                      onToggle={handleExtensionToggle}
                   />
-               )) 
-
+               ))
             }
          </section>
       </main>
