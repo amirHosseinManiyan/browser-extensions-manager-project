@@ -4,7 +4,7 @@ A responsive browser extensions management application built with React. Users c
 
 ## 🚀 Live Demo
 
-**[View Live Project](https://amirhosseinmaniyan.github.io/browser-extensions-manager/)**
+**[View Live Project](https://amirhosseinmaniyan.github.io/browser-extensions-manager-project/)**
 
 ## ✨ Features
 
@@ -105,7 +105,8 @@ Vite's `base` configuration is set to the repository's deployment path to ensure
 **Amir Hossein Maniyan**
 
 - GitHub: [@amirhosseinmaniyan](https://github.com/amirhosseinmaniyan)
-- Live Project: [Browser Extensions Manager](https://amirhosseinmaniyan.github.io/browser-extensions-manager/)
+- Repository: [browser-extensions-manager-project](https://github.com/amirHosseinManiyan/browser-extensions-manager-project)
+- Live Project: [Browser Extensions Manager](https://amirhosseinmaniyan.github.io/browser-extensions-manager-project/)
 
 ---
 
