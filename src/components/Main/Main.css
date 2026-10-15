@@ -1,0 +1,49 @@
+.main {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.main-header {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   align-items: center;
+}
+
+.main-title {
+   color: var(--color-extension-name);
+}
+
+.main-filters {
+   display: flex;
+   gap: 1rem;
+}
+
+.main-filters > button {
+   padding: 8px 20px;
+   border-radius: 20px;
+   font-weight: 500;
+   font-size: 1rem;
+   border-color: var(--color-extension-remove);
+   background-color: var(--bg-color-elem);
+   color: var(--color-extension-name);
+   cursor: pointer;
+   transition: color 0.5s ease;
+}
+
+.main-filters > button:hover {
+   color: var(--color-extension-description);
+}
+
+.main-filters > button.active-filter {
+   background-color: var(--bg-color-active-filter);
+   color: var(--color-extension-remove-hover);
+   border-color: hsl(3, 86%, 64%);
+}
+
+.extensions {
+   display: grid;
+   gap: 1rem;
+   grid-template-columns: 1fr;
+}

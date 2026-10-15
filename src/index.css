@@ -1,0 +1,45 @@
+@font-face {
+   font-family: "Noto sans";
+   src: url("/fonts/NotoSans-VariableFont_wdth,wght.ttf");
+}
+
+:root {
+   --bg-color-body: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+   --bg-color-elem: hsl(200, 60%, 99%);
+   --bg-color-theme: hsl(0, 0%, 93%);
+   --bg-color-theme-hover: hsl(0, 0%, 78%);
+   --color-extension-name: black;
+   --color-extension-description: rgba(0, 0, 0, 0.6);
+   --color-extension-remove: rgba(0, 0, 0, 0.5);
+   --color-extension-remove-hover: white;
+   --bg-color-active-filter: hsl(3, 71%, 56%);
+}
+
+[data-theme="dark"] {
+   --bg-color-body: linear-gradient(180deg, #040918 0%, #091540 100%);
+   --bg-color-elem: hsl(226, 24%, 17%);
+   --bg-color-theme: hsl(225, 23%, 24%);
+   --bg-color-theme-hover: hsl(226, 11%, 37%);
+   --color-extension-name: white;
+   --color-extension-description: rgba(255, 255, 255, 0.6);
+   --color-extension-remove: rgba(255, 255, 255, 0.5);
+   --color-extension-remove-hover: black;
+}
+
+*, *::after, *::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Noto sans";
+}
+
+html,
+body {
+   padding: 2rem 1rem;
+   min-height: 100vh;
+   min-width: 350px;
+   margin: 0;
+   background: var(--bg-color-body) no-repeat fixed;
+   background-size: cover;
+}
+

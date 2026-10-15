@@ -1,0 +1,25 @@
+.header {
+   background-color: var(--bg-color-elem);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 10px;
+   border-radius: 10px;
+   width: 100%;
+}
+
+.change-theme-button {
+   background-color: var(--bg-color-theme);
+   padding: 10px;
+   border: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.change-theme-button:hover {
+   background-color: var(--bg-color-theme-hover);
+}
