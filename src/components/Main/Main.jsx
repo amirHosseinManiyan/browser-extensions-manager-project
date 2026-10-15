@@ -36,6 +36,19 @@ export default function Main() {
    // 0 -> All, 1 -> Active, 2 -> Inactive 
    const [filter, setFilter] = useState(0);
 
+   let filteredExtensions = extensions
+      .filter(extension => {
+         if (filter === 1) {
+            return extension["isActive"];
+         } 
+         
+         else if (filter === 2) {
+            return !extension["isActive"];
+         }
+      
+         return true;
+      });
+
    return(
       <main className="main">
          <section className="main-header">
@@ -65,21 +78,17 @@ export default function Main() {
             </div>
          </section>
 
-         <section className="extensions">
+         <section 
+            className={
+               filteredExtensions.length === 0
+               ? "extensions-empty"
+               : "extensions"
+            }
+         >
             {
-               extensions
-               .filter(extension => {
-                  if (filter === 1) {
-                     return extension["isActive"];
-                  } 
-                  
-                  else if (filter === 2) {
-                     return !extension["isActive"];
-                  }
-
-                  return true;
-               })
-               .map(extension => (
+               filteredExtensions.length === 0
+               ? <p className="empty-state">No extensions found.</p>
+               : filteredExtensions.map(extension => (
                   <Extension
                      key={extension["id"]}
                      extension={extension}

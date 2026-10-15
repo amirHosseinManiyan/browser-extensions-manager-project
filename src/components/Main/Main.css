@@ -3,6 +3,8 @@
    flex-direction: column;
    align-items: center;
    gap: 2rem;
+   width: 100%;
+   max-width: 1240px;
 }
 
 .main-header {
@@ -49,6 +51,16 @@
    grid-template-columns: 1fr;
 }
 
+.extensions-empty {
+   display: flex;
+}
+
+.empty-state {
+   color: var(--color-extension-name);
+   font: 1.5rem;
+   font-weight: 600;
+}
+
 @media (min-width: 768px) {
    .extensions {
       max-width: none;
@@ -67,6 +79,5 @@
 @media (min-width: 1024px) {
    .extensions {
       grid-template-columns: 1fr 1fr 1fr;
-      max-width: 1240px;
    }
 }
